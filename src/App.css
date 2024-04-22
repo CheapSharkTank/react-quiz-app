@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  color: #293264;
+}
+
+.nowrap {
+  text-wrap: nowrap;
+}
+
+body {
+  background-color: rgb(37, 36, 36);
+}
+
+.main-body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* main wrapper css goes here */
+.wrapper {
+  background-color: royalblue;
+  background-image: url('../public/bg-img.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  height: 570px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  border: 1px solid white;
+  border-radius: 20px;
+  padding-inline: 70px;
+
+}
+
+.wrapper .content-title {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.wrapper .start-btn {
+  width: 193px;
+  height: 52px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #4D5B9E;
+}
+
+.start-btn:active,
+.start-btn:focus-visible {
+  background-color: #364176;
+}
+
+/* Question wrapper css goes here */
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center content horizontally */
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  /* Limit the width of the question container */
+  max-height: auto;
+  margin: 0 auto;
+  /* Center the container horizontally */
+}
+
+.question-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  /* Full width */
+}
+
+.question-content {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.multiple-choices {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow choices to wrap onto new lines */
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  /* Space between each choice */
+}
+
+.choice {
+  min-width: 100px;
+  /* Minimum width for each choice */
+  height: 25px;
+  padding: 3.8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.chosen {
+  background-color: #F8BCBC;
+}
+
+.submit-ans {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 15px 10px;
+
+  width: 120px;
+  height: 35px;
+  background-color: #4D5B9E;
+  color: white;
+  font-size: 12px;
+}
+
+.submit-ans:hover {
+  background-color: #6f79b5;
+}
+
+.submit-ans:focus-visible,
+.submit-ans:active {
+  background-color: #293264;
+}
+
+@media only screen and (min-width: 320px) {
+  .wrapper {
+    width: 95%;
+    height: 70%;
+    gap: 0.9rem;
+    padding-inline: auto;
+
+  }
+
+  .wrapper .content-title {
+    font-size: 1.5rem;
+  }
+
+  .wrapper .start-btn {
+    width: 150px;
+    height: 40px;
+    ;
+  }
+  /* Question wrapper css goes here */
+  .question {
+    padding: 13px;
+  }
+
+  .question-body {
+    gap: 10px;
+    width: auto;
+  }
+
+  .question-content {
+    font-size: 0.9rem;
+  }
+
+  .multiple-choices {
+    gap: 5px;
+  }
+
+  .submit-ans {
+    margin: 10px 10px;
+    width: 100px;
+    height: 30px;
+
+  }
+
+
+}
